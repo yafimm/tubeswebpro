@@ -1,4 +1,9 @@
 /* Menu kecil paling atas*/
+@font-face {
+  font-family: "Incosolata";
+  src: url('<?=base_url()?>assets/font/Inconsolata-Regular.tff');
+}
+
 .topnav {
     background-color: #22313F;
     color: #fff;
@@ -242,6 +247,7 @@ s
    color: white;
    text-align: center;
    border-top: solid #EB9532 5px;
+   font-family:monospace;
 }
 .footer ul, .footer li{
   list-style: none;
@@ -287,6 +293,7 @@ position: absolute;
   width: 100%;
   padding: 5px;
   background: #EB9532;
+
 }
 .menu a{
   float: right;
@@ -353,24 +360,26 @@ position: absolute;
 .judul-kecil{
   font-size: 20px;
   border-bottom: solid #D5D8DC 1px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 .kategori{
   padding: 20px 0px 0px 0;
-  background-color: #e6e6e8;
-}
-.kategori > row{
-  padding: 0px 0px 10px 0px;
+  font-family:monospace;
+
+
 }
 .kategori li{
-  list-style: none;
-  font-size: 12px;
+  list-style-type: disc;
+  font-size: 14px;
+  padding: 15px;
 }
 .list-item{
   padding: 20px;
   height: auto;
+  font-family:monospace;
+
 }
 .list-item a:hover{
   text-decoration: none;
@@ -430,7 +439,14 @@ position: absolute;
 .list-kategori{
   padding: 0px 0 0 0;
 }
+.list-kategori a{
+  color: rgb(40, 40, 43);
+}
+.list-kategori a:hover{
+  color: rgba(78, 68, 68, 0.8);
+  text-decoration:none;
+}
 .list-kategori ul{
-  list-style-type: none;
+  list-style-type: decimal;
   padding: 5px;
 }
